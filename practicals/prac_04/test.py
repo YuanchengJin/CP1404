@@ -122,7 +122,7 @@ print（names）
 #
 # main()
 #
-with open('numbers.txt') as in_file:
-    # lines = [line.strip() for line in in_file.readlines()]
+# with open('numbers.txt') as in_file:
     lines = [line.strip() for line in in_file.readlines()]
-    print(lines)
+    # lines = [line.strip() for line in in_file.readlines()]
+    # print(lines)
