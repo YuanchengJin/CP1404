@@ -74,7 +74,7 @@ def add_guitars(guitars):
 
     print(f"\nAdded {guitars_added} guitar(s) to the list.")
 def save_guitars(filename, guitars):
-    """Save guitars to a CSV file."""
+    """Save guitars to a CSV file. """
     with open(filename,'w',newline = '') as outfile:
         writer = csv.writer(outfile)
         for guitar in guitars:

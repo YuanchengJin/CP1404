@@ -6,9 +6,7 @@ File and class example - opens/reads a file, stores in objects of custom class
 
 import csv
 from collections import namedtuple
-
 from programming_language import ProgrammingLanguage
-
 
 def main():
     """Read file of programming language details, save as objects, display."""
@@ -37,10 +35,6 @@ def main():
     # Loop through and display all languages (using their str method)
     for language in languages:
         print(language)
-
-
-main()
-
 
 def using_csv():
     """Language file reader version using the csv module."""
@@ -84,5 +78,3 @@ def using_csv_namedtuple():
     for language in map(Language._make, csv.reader(in_file)):
         print(language.name, 'was released in', language.year)
         print(repr(language))
-
-# using_csv_namedtuple()
