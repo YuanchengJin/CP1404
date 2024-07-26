@@ -31,7 +31,7 @@ while MIN_PRICE <= price <= MAX_PRICE:
         price_change = random.uniform(0, MAX_INCREASE)
     else:
         # generate a random floating-point number
-        # between negative MAX_DECREASE and 0
+        # between negative MAX_DECREASE and 0.
         price_change = random.uniform(-MAX_DECREASE, 0)
     number_of_days +=1
     price *= (1 + price_change)
